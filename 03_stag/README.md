@@ -12,8 +12,28 @@ The game engine will parse this two files based on their document formats, and s
 
 ## Entities
 It is essential to use a hierarchy of "Entity" classes to represent key elements of the game:
-1. Location: A room or place within the game
+1. Location: A room or place within the game. It recorded the paths to other Locations, and characters, artefacts, and furniture that are in the location.
 1. Artefact: A physical "thing" within the game (that can be collected by the player)
 1. Furniture: A physical "thing", part of a location (that can NOT be collected by the player)
 1. Character: A creature/person involved in game
 1. Player: A special kind of character and the user
+
+## Actions
+Dynamic behaviour within game is represented by "Actions", each of which has following elements:
+2. A set of possible "trigger" words
+2. A set of "subjects" entities that are acted on
+2. A set of "consumed" entities that are removed
+2. A set of "produced" entities that are created
+
+## Standard Gameplay Commands
+3. inventory: lists all of the artefacts currently being carried by the player
+3. get: picks up a specified artefact from current location and puts it into player's inventory
+3. drop: puts down an artefact from player's inventory and places it into the current location
+3. goto: moves from one location to another
+3. look: reports entities in the current location and paths to other locations
+3. Commands from "Actions" 
+
+## Player
+The game engine accepted multiple players to play.
+Each player should start with a health level of 3 Poisons.
+When player's health runs out, they return to start point.
