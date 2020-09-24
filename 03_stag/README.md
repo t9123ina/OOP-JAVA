@@ -13,17 +13,17 @@ The game engine will parse this two files based on their document formats, and s
 ## Entities
 It is essential to use a hierarchy of "Entity" classes to represent key elements of the game:
 1. Location: A room or place within the game. It recorded the paths to other Locations, and characters, artefacts, and furniture that are in the location.
-1. Artefact: A physical "thing" within the game (that can be collected by the player)
-1. Furniture: A physical "thing", part of a location (that can NOT be collected by the player)
-1. Character: A creature/person involved in game
-1. Player: A special kind of character and the user
+2. Artefact: A physical "thing" within the game (that can be collected by the player)
+3. Furniture: A physical "thing", part of a location (that can NOT be collected by the player)
+4. Character: A creature/person involved in game
+5. Player: A special kind of character and the user
 
 ## Actions
 Dynamic behaviour within game is represented by "Actions", each of which has following elements:
-2. A set of possible "trigger" words
+1. A set of possible "trigger" words
 2. A set of "subjects" entities that are acted on
-2. A set of "consumed" entities that are removed
-2. A set of "produced" entities that are created
+3. A set of "consumed" entities that are removed
+4. A set of "produced" entities that are created
 
 ## Standard Gameplay Commands
 3. inventory: lists all of the artefacts currently being carried by the player
