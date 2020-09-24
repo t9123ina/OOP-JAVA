@@ -26,12 +26,12 @@ Dynamic behaviour within game is represented by "Actions", each of which has fol
 4. A set of "produced" entities that are created
 
 ## Standard Gameplay Commands
-3. inventory: lists all of the artefacts currently being carried by the player
-3. get: picks up a specified artefact from current location and puts it into player's inventory
+1. inventory: lists all of the artefacts currently being carried by the player
+2. get: picks up a specified artefact from current location and puts it into player's inventory
 3. drop: puts down an artefact from player's inventory and places it into the current location
-3. goto: moves from one location to another
-3. look: reports entities in the current location and paths to other locations
-3. Commands from "Actions" 
+4. goto: moves from one location to another
+5. look: reports entities in the current location and paths to other locations
+6. Commands from "Actions" 
 
 ## Player
 The game engine accepted multiple players to play.
