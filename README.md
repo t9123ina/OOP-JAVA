@@ -1,6 +1,5 @@
-# Assessments from the course -- Object Oriented Programming in JAVA
+# List of Assessments
 
-## List of Assessments
 1. Grade Converter - 
 The aim of this assignment is to create a program to convert a mark (between 0 and 100) into a grade ("Fail", "Pass", "Merit", "Distinction").
 
